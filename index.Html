@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradeByArslan | Trading Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family: 'Roboto', sans-serif;}
+    html { scroll-behavior: smooth; }
+    body { background: #f9f9f9; color: #111; line-height:1.6; }
+
+    header {
+      background: #fff; padding:20px 40px; box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      position:sticky; top:0; z-index:100; display:flex; justify-content:space-between; align-items:center;
+    }
+    header h1 { color:#2563eb; font-size:24px; }
+    nav a { text-decoration:none; color:#111; margin-left:20px; font-weight:500; transition:0.3s; }
+    nav a:hover { color:#2563eb; }
+
+    section { padding:80px 20px; max-width:1100px; margin:auto; }
+    h2 { color:#2563eb; margin-bottom:20px; text-align:center; }
+    p { margin-bottom:15px; }
+
+    .btn { display:inline-block; background:#2563eb; color:#fff; padding:10px 20px; margin-top:10px;
+      border-radius:5px; text-decoration:none; transition:0.3s; }
+    .btn:hover { background:#1e40af; transform:scale(1.05); }
+
+    img { max-width:100%; border-radius:10px; transition:0.3s; }
+    img:hover { transform:scale(1.03); }
+
+    /* Contact form */
+    .contact form { display:flex; flex-direction:column; max-width:500px; margin:auto; }
+    .contact input, .contact textarea { padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px; }
+    .contact button { background:#2563eb; color:#fff; padding:10px; border:none; border-radius:5px; cursor:pointer; transition:0.3s; }
+    .contact button:hover { background:#1e40af; transform:scale(1.05); }
+
+    /* Chart Animation */
+    .chart-container { position:relative; height:200px; margin-top:20px; }
+    .chart-line { stroke:#2563eb; stroke-width:3; fill:none; animation: draw 3s infinite; }
+    @keyframes draw { 0% { stroke-dasharray:0,1000; } 50% { stroke-dasharray:500,1000; } 100% { stroke-dasharray:0,1000; } }
+
+    footer { text-align:center; padding:20px; background:#111; color:#fff; margin-top:40px; }
+
+    @media(max-width:768px){
+      header { flex-direction:column; align-items:flex-start; }
+      nav { margin-top:10px; }
+      nav a { display:block; margin:10px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TradeByArslan</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome to TradeByArslan</h2>
+  <p>Your trusted trading mentor and server provider.</p>
+  <img src="https://images.unsplash.com/photo-1618354699620-39177f4f05a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Trading Chart">
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>Hello! I am Arslan, a professional trading mentor with years of experience in forex and crypto trading. I guide traders to maximize profits and minimize risks with strategic insights.</p>
+  <img src="https://images.unsplash.com/photo-1616627567246-c87e7c03b521?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="About Trading">
+</section>
+
+<section id="services">
+  <h2>Trading Servers & Services</h2>
+  <p>We provide professional trading servers, live signal services, and mentorship programs to help traders succeed.</p>
+  <div class="chart-container">
+    <svg width="100%" height="200">
+      <polyline class="chart-line" points="0,150 50,120 100,130 150,80 200,90 250,50 300,70 350,40 400,60 450,30 500,50"></polyline>
+    </svg>
+  </div>
+  <img src="https://images.unsplash.com/photo-1605902711622-cfb43c443c5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Trading Services">
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Phone: <a href="tel:+923241723787">+923241723787</a></p>
+  <p>Email: <a href="mailto:onlyarslan32@gmail.com">onlyarslan32@gmail.com</a></p>
+  <a class="btn" href="https://wa.me/923241723787" target="_blank">WhatsApp Me</a>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 TradeByArslan. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
